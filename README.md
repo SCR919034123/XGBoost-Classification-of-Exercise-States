@@ -74,7 +74,7 @@ Each worksheet holds a sensor stream; its worksheet name normally matches the si
 | --- | --- |
 | `HR` | Heart rate |
 | `Temp` | Skin temperature |
-| `GRS` or `GSR` | Galvanic skin response; `GRS` is used in some code defaults |
+| `GSR` | Galvanic skin response |
 | `SR` | Sweat rate |
 | `TEC` | Sweat-related electrical channel; displayed as SIC in SHAP labels |
 | `LA` | Lactate |
@@ -266,11 +266,6 @@ Selected outputs are available in multiple formats, including PDF and SVG. The e
 - **Missing SHAP figures** — Confirm that `shap_outputs/global_4class_shap_raw.npz` was generated. The restyling step requires saved SHAP data.
 - **Slow execution or large figures** — Reduce the number of explained/decision-plot samples, reduce plot DPI for preview runs, or use fewer model trees during testing.
 
-## Reproducibility and interpretation
-
-The manuscript reports performance from its specified experimental dataset and analysis procedures; those values should **not be assumed for new participants, altered sensor inputs, or different processing settings**. Keep the input data, software versions, sampling settings, and post-processing profile consistent when comparing results.
-
-Because the source code includes optional temporal smoothing, sequence decoding, and protocol-based priors, state clearly which configuration produced each reported metric. The delivered program is an **offline research-analysis script**, not a ready-to-deploy real-time inference application.
 
 ## Related manuscript
 
