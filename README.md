@@ -60,7 +60,7 @@ python "Exercise-State Classification.py"
 
 You can also open the file in **Spyder** and press **F5**. The supplied script automatically runs the classification and SHAP-figure stages through its `run_all_in_one()` function.
 
-**Output folder:** `outputs_v15-1/` (beside the classification script).
+**Output folder:** `Exercise_State_Results/` (beside the classification script).
 
 ### B. RPE Prediction
 
@@ -70,7 +70,7 @@ python "RPE Prediction.py" --do_global_shap
 
 This runs **LOSO XGBoost regression**, evaluates held-out RPE predictions, and additionally fits an all-participant model for **global SHAP interpretation**. Omitting `--do_global_shap` runs the regression evaluation without that global interpretation step.
 
-**Output folder:** `outputs_rpe_loso_warmup_exercise_test_density_ALL/` (relative to the working directory).
+**Output folder:** `RPE_Prediction_Results/` (relative to the working directory).
 
 ## 5. Main adjustable parameters
 
@@ -113,7 +113,7 @@ python "RPE Prediction.py" --do_global_shap --history_sec 600 --sample_step 10 -
 
 ## 6. Key results
 
-| Classification: `outputs_v15-1/`                       | RPE regression: `outputs_rpe_loso_warmup_exercise_test_density_ALL/`                   |
+| Classification: `Exercise_State_Results/`                       | RPE regression: `RPE_Prediction_Results/`                   |
 | ------------------------------------------------------ | -------------------------------------------------------------------------------------- |
 | `subject_macro_f1_summary.csv` — subject-level metrics | `summary_rpe_reg_loso.csv` — LOSO metrics                                              |
 | `all_loso_predictions.csv` — held-out predictions      | `heldout_predictions_rpe_substage_all.csv` — held-out, substage-aggregated predictions |
