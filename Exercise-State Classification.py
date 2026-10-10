@@ -2775,7 +2775,7 @@ def run_embedded_shap_redraw():
 def run_all_in_one():
     import sys as _sys
     _base = Path(__file__).resolve().parent
-    _out = _base / 'outputs_v15-1'
+    _out = _base / 'Exercise_State_Result'
     _old_argv = list(_sys.argv)
     try:
         _sys.argv = ['classification', '--excel_dir', str(_base / 'out_1Hz-1'), '--excel_pattern', '*.xlsx', '--out', str(_out), '--shap_explain_n', '0', '--shap_decision_n', '0']
