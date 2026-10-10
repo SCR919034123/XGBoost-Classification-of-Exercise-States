@@ -17,7 +17,7 @@ Keep the original Python filenames and place both scripts in the **same folder**
 
 ```
 SEAMS-ML/
-├── RPE_4state_LOSO_SHAP_submission_single_v5_Figure3_exact_style_clean.py
+├── Exercise-State Classification.py
 ├── RPE Prediction.py
 ├── README.md
 └── out_1Hz-1/
@@ -55,7 +55,7 @@ Open **Anaconda Prompt** and change to the repository folder (`cd` to the folder
 ### A. Exercise-State Classification
 
 ```bash
-python "RPE_4state_LOSO_SHAP_submission_single_v5_Figure3_exact_style_clean.py"
+python "Exercise-State Classification.py"
 ```
 
 You can also open the file in **Spyder** and press **F5**. The supplied script automatically runs the classification and SHAP-figure stages through its `run_all_in_one()` function.
