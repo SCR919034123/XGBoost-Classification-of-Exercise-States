@@ -76,7 +76,7 @@ Each worksheet holds a sensor stream; its worksheet name normally matches the si
 | `Temp` | Skin temperature |
 | `GSR` | Galvanic skin response |
 | `SR` | Sweat rate |
-| `TEC` | Sweat-related electrical channel; displayed as SIC in SHAP labels |
+| `SIC` | Sweat Ionic Conductivity |
 | `LA` | Lactate |
 | `GLU` | Glucose |
 | `AA` | Ascorbic acid |
@@ -189,7 +189,7 @@ This **replaces only the first argument list**, not the rest of the script. The 
 | `--seed` | 42 | Random seed for reproducibility. |
 | `--xgb_n_jobs` | 1 | Number of XGBoost worker threads. |
 | `--clip_z` | 20 | Clipping bound applied after baseline normalization. |
-| `--shap_tec_clip_z` | 30 | TEC clipping setting for the separate SHAP feature dataset; not a LOSO-metric setting. |
+| `--shap_sic_clip_z` | 30 | SIC clipping setting for the separate SHAP feature dataset; not a LOSO-metric setting. |
 
 **Sweat-delay direction:** The implementation uses a negative shift (`shift(-delay)`) of selected sweat channels. A value of `300` aligns measurements from a later time point with an earlier reference time, reflecting an assumed sweat-response delay. This also removes trailing rows without aligned sweat values. Choose the delay based on the experimental protocol, not simply to increase accuracy.
 
